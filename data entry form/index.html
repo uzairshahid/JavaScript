@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<style>
+body
+{
+    background-color: aliceblue;
+}
+    .a{
+        margin-top: 50px;
+        width: auto;
+        height: 8px;
+        background-color: aqua;
+      
+    }
+  .b{
+        margin-top: 50px;
+        width: auto;
+        height: 8px;
+        background-color: aqua;
+      
+    }
+    
+  input
+  {
+      
+     margin-left:60px;
+     margin-top:8px;
+     margin-right:auto;
+     
+      height:30px;
+      border-radius:4px;    
+  }
+
+
+  .navbar-inverse
+  {
+      height:50px;
+      width:800px;
+      margin-top:50px;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  .table
+  {
+      width: 900px;
+      margin: auto;
+      
+
+  }
+  td{
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+
+
+  }
+  
+  th{
+      text-align: center;   
+
+
+  }
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+
+}
+</style>
+
+<body>
+
+<h1>Simple Data Entry Form</h1>
+    <nav class="navbar navbar-inverse">
+        <input id="name" onfocus=" value = ' '"   onblur="clr()"  type="type"  value="user name " />
+        <input id="email"  onfocus=" value = ' '"   onblur="clr()"   type="type" value="Email ID " />
+        <input id="num"   onfocus=" value = ' '"   onblur="clr()"  type="type"    value="Phone Number " />
+        <button id="submit"   onclick="createrTd()" class="btn"> submit</button>
+    </nav>
+    
+   
+
+   <table class="table-responsive">
+<table id="myTable" class="table table-bordered ">
+ 
+
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+    </tr>
+</thead>
+<tbody>
+    <!--<tr>
+
+    <td id="name1"></td>
+    <td id="email1"></td>
+    <td id="phone1"></td>
+    </tr>-->
+</tbody>
+   </table>
+</table>
+
+
+   
+<!--<div class="input">
+
+<div class="a">
+
+</div>
+    <input type="type" name="name" value=" " />
+    <input type="type" name="name" value=" " />
+    <input type="type" name="name" value=" " />
+<div class="b">
+
+</div>
+</div>-->
+
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
